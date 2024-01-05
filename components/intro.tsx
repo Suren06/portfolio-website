@@ -89,7 +89,7 @@ function Intro() {
           className="group bg-teal-900 hover:bg-teal-950  text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none 
                 focus:scale-110 hover:scale-110 
                 active:scale-105 transition cursor-pointer border border-black/10"
-          href="/CV.pdf"
+          href="/SurenCV.pdf"
           download
         >
           {" "}
