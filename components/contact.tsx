@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState } from "react";
+import { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -14,6 +14,7 @@ export default function Contact() {
     senderEmail: "",
     message: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,21 +26,30 @@ export default function Contact() {
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setLoading(true); // Set loading to true when submitting the form
+    
     const formDataToSend = new FormData();
     formDataToSend.append("senderEmail", formData.senderEmail);
     formDataToSend.append("message", formData.message);
-
-    const { data, error } = await sendEmail(formDataToSend);
-
-    if (error) {
-      toast.error(error);
-    } else {
+  
+    try {
+      const { data } = await sendEmail(formDataToSend);
       toast.success("Email sent successfully!");
       setFormData({
         senderEmail: "",
         message: "",
       });
-    }
+    } catch (error: unknown) {
+      if (typeof error === 'string') {
+          toast.error(error);
+      } else {
+          // Handle other error types or log them
+          toast.error("An error occurred while sending the email.");
+      }
+  } finally {
+      setLoading(false); // Set loading back to false after sending the email
+  }
+  
   };
 
   return (
@@ -102,7 +112,7 @@ export default function Contact() {
           maxLength={5000}
           placeholder="Your message"
         />
-        <SubmitBtn />
+        <SubmitBtn loading={loading} />
       </form>
     </motion.section>
   );
