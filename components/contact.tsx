@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
@@ -10,6 +10,37 @@ import toast from "react-hot-toast";
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
+  const [formData, setFormData] = useState({
+    senderEmail: "",
+    message: "",
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formDataToSend = new FormData();
+    formDataToSend.append("senderEmail", formData.senderEmail);
+    formDataToSend.append("message", formData.message);
+
+    const { data, error } = await sendEmail(formDataToSend);
+
+    if (error) {
+      toast.error(error);
+    } else {
+      toast.success("Email sent successfully!");
+      setFormData({
+        senderEmail: "",
+        message: "",
+      });
+    }
+  };
 
   return (
     <motion.section
@@ -31,36 +62,33 @@ export default function Contact() {
     >
       <SectionHeading>Contact me</SectionHeading>
       <p className="text-gray-700 dark:text-white/80">
-        For direct contact reach me at <span className="font-semibold text-[#016BF8]">
-        +60165820616 {" "}
-        </span>(WhatsApp available).
+        For direct contact reach me at{" "}
+        <span className="font-semibold text-[#016BF8]">
+          +60165820616 (WhatsApp available).
+        </span>
       </p>
       <h1>OR</h1>
       <p className="text-gray-700 dark:text-white/80">
         For communication, email me at{" "}
-        <a className="font-semibold text-[#016BF8] hover:text-[#016cf8e6]" href="mailto:Suren.boyilla@gmail.com">
-        Suren.boyilla@gmail.com
+        <a
+          className="font-semibold text-[#016BF8] hover:text-[#016cf8e6]"
+          href="mailto:Suren.boyilla@gmail.com"
+        >
+          Suren.boyilla@gmail.com
         </a>{" "}
         or use this form.
       </p>
 
       <form
         className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
-
-          if (error) {
-            toast.error(error);
-            return;
-          }
-
-          toast.success("Email sent successfully!");
-        }}
+        onSubmit={handleSubmit}
       >
         <input
           className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="senderEmail"
           type="email"
+          value={formData.senderEmail}
+          onChange={handleInputChange}
           required
           maxLength={500}
           placeholder="Your email"
@@ -68,9 +96,11 @@ export default function Contact() {
         <textarea
           className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
           name="message"
-          placeholder="Your message"
+          value={formData.message}
+          onChange={handleInputChange}
           required
           maxLength={5000}
+          placeholder="Your message"
         />
         <SubmitBtn />
       </form>
