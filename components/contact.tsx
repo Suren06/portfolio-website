@@ -74,7 +74,10 @@ export default function Contact() {
       <p className="text-gray-700 dark:text-white/80">
         For direct contact reach me at{" "}
         <span className="font-semibold text-[#016BF8]">
-          +60165820616 (WhatsApp available).
+          +60165820616{" "}
+        </span>
+        <span className="">
+          (WhatsApp available).
         </span>
       </p>
       <h1>OR</h1>
