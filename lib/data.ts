@@ -43,50 +43,50 @@ export const projectsData = [
   {
     title: "ROCHE - CP, MHH",
     description:
-      "I worked as a full-stack developer on this startup project for 2+ years. Users can give public feedback to companies.",
+      "At Roche, I develop digital solutions for global patient care.",
     tags: ["React", "NextJS", "JS", "Java", "Spring Boot", "Tailwind", "AEM", "AWS"],
     imageUrl: rocheProjImg,
   },
   {
     title: "DHL - BEMS",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "I contributed to DHL's Global Event Logistics system.",
+    tags: ["Angular", "TypeScript", "Java", "Play framework", "OracleDB"],
     imageUrl: dhlProjImg,
   },
   {
     title: "PCCW Solutions - DWFM",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "I was instrumental in designing and implementing the work orders and service tasks system as a developer.",
+    tags: ["Angular", "IONIC", "Spring Boot", "Maria DB", "AWS"],
     imageUrl: pccwProjImg,
   },
   {
     title: "AXA - Marc",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    "I contributed to an internal user system facilitating tracking of member's medical insurance plans and balances.",
+    tags: ["Java", "JSF", "Hibernate", "MYSql" ],
     imageUrl: axaProjImg,
   },
   {
     title: "CIMB - Clicks",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "I contributed to CIMB Clicks, the comprehensive online banking portal for CIMB Bank.",
+    tags: ["Angular", "Java", "Spring", "DB2"],
     imageUrl: cimbProjImg,
   },
   {
     title: "MSIG - GenLink",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "I contributed to developing a robust policy and submission management system at MSIG.",
+    tags: ["JS", "Struts2", "DB2", "CSS"],
     imageUrl: msigProjImg,
   },
   {
     title: "ALLIANZ - Alpha",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "I contributed to developing a comprehensive system at ALLIANZ for managing user policies and submissions",
+    tags: ["Java", "Spring", "Hibernate", "DB2", "Jasper reports"],
     imageUrl: allianzProjImg,
   },
 ] as const;
@@ -118,7 +118,7 @@ export const experiencesData = [
     title: "Sr.Full-Stack Developer",
     location: "KL, Malaysia",
     description:
-      "I have worked in Allianz Insurance for 3+ years as Java Developer.",
+      "I worked at Allianz Insurance as a Java Developer for over 3 years.",
     icon: React.createElement(FaJava),
     date: "July 2013 – Dec 2016",
   },
@@ -126,7 +126,7 @@ export const experiencesData = [
     title: "Java & JS Developer",
     location: "KL, Malaysia",
     description:
-      "I have worked in MSIG Insurance for less than a year as Full-Stack Developer.",
+      "I was a Full-Stack Developer at MSIG Insurance for a year.",
     icon: React.createElement(FaJava),
     date: "Mar 2016 – Apr 2018",
   },
@@ -134,7 +134,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "KL, Malaysia",
     description:
-      "I have worked in CIMB Clicks for less than a year as Full-Stack Developer.",
+      "I worked at CIMB Clicks as a Full-Stack Developer for about a year.",
     icon: React.createElement(SiSpring),
     date: "Apr 2018 – Mar 2019",
   },
@@ -142,7 +142,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "KL, Malaysia",
     description:
-      "I have worked in AXA Partners for 1.4 years as Full-Stack Developer.",
+      "I worked as a Full-Stack Developer at AXA Partners.",
     icon: React.createElement(LuGraduationCap),
     date: "Mar 2019 – Jun 2020",
   },
@@ -150,7 +150,7 @@ export const experiencesData = [
     title: "Full-Stack Developer",
     location: "KL, Malaysia",
     description:
-      "I have worked in PCCW Solutions for 1 year as Full-Stack Developer.",
+      "I served as a Full-Stack Developer at PCCW Solutions for 1 year.",
     icon: React.createElement(LuGraduationCap),
     date: "July 2020 – July 2021",
   },
@@ -158,7 +158,7 @@ export const experiencesData = [
     title: "Front End Developer (Freelancer)",
     location: "KL, Malaysia",
     description:
-      "I have worked in DHL over 1+ year as Front End Developer.",
+      "I worked as an Angular Front End Developer at DHL.",
     icon: React.createElement(FaAngular),
     date: "Jul 2022 - Jul 2023",
   },
@@ -166,7 +166,7 @@ export const experiencesData = [
     title: "Sr.Full-Stack Developer",
     location: "KL, Malaysia",
     description:
-      "I am working in Roche over 2+ years as Sr.Full-Stack Developer.",
+      "I was engaged in multiple projects involving various technology stacks during my tenure at Roche.",
     icon: React.createElement(TbBrandJavascript),
     date: "July 2021 – Present",
   },

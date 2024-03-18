@@ -13,7 +13,7 @@ function Intro() {
   return (
     <section
       id="home"
-      className="mb-28 max-w-[67.6rem] text-center sm:mb-0 scroll-mt-[100rem]"
+      className="mb-28 max-w-[66.6rem] text-center sm:mb-0 scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
         <div className="relative">
@@ -53,16 +53,17 @@ function Intro() {
       </div>
 
       <motion.h1
-        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-3xl items-center justify-center"
+        className="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-[26px] items-center justify-center"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Suren.</span> I'm a{" "}
-        <span className="font-bold">Full Stack Developer</span> with{" "}
-        <span className="font-bold">9+ years</span> of experience. I enjoy
-        building <span className="">apps & sites</span>. <br />
-        My skills:{" "}
-        <span className="underline">
+        <span>Hello, I'm{" "}</span>
+        <span className="font-semibold">Suren,</span> a{" "}
+        <span className="font-semibold">Full Stack Developer</span> with{" "}
+        <span>over 10 years</span> of experience.<br/> I love
+        building <span className="">apps & websites{" "}</span>
+        using{" "}
+        <span className="font-semibold">
           React (Next.js), Angular, Java, Spring Boot, SQL/NoSQL, AWS
         </span>
       </motion.h1>

@@ -30,13 +30,18 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
-
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+      <p className="text-gray-700 dark:text-white/80">
+        For direct contact reach me at <span className="font-semibold text-[#016BF8]">
+        +60165820616 {" "}
+        </span>(WhatsApp available).
+      </p>
+      <h1>OR</h1>
+      <p className="text-gray-700 dark:text-white/80">
+        For communication, email me at{" "}
+        <a className="font-semibold text-[#016BF8] hover:text-[#016cf8e6]" href="mailto:Suren.boyilla@gmail.com">
+        Suren.boyilla@gmail.com
         </a>{" "}
-        or through this form.
+        or use this form.
       </p>
 
       <form

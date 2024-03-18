@@ -19,31 +19,19 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a Bachelor's degree in{" "}
-        <span className="font-medium">
-          ECE (Electronics and Communication Engineering)
+      Hi, I'm Suren, a Full Stack Developer with a knack for problem-solving.{" "}<br/>
+
+       <span className="font-semibold">
+        Proficient in Java, Spring Boot, Angular, React, and SQL/NOSQL.{" "}<br/>
         </span>
-        , I decided to pursue my passion for programming. I enrolled in a coding
-        bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          Java, Spring, Sprin Boot, Angular, React, SQL
+        <span className="">
+        Seeking full-time opportunities.
         </span>
-        . I am also familiar with TypeScript. I am always looking to learn new
-        technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        sports, watching movies, and workouts. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about <span className="font-medium">history and politics</span>
+        <span className="italic"> Outside of coding, I enjoy sports, movies, workouts, and history/politics.</span>
       </p>
     </motion.section>
   );
