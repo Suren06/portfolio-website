@@ -44,21 +44,21 @@ export const projectsData = [
     title: "ROCHE - CP, MHH",
     description:
       "At Roche, I develop digital solutions for global patient care.",
-    tags: ["React", "NextJS", "JS", "Java", "Spring Boot", "Tailwind", "AEM", "AWS"],
+    tags: ["React", "NextJS", "JS", "NodeJS", "ExpressJS", "Java", "Spring Boot", "Tailwind", "AEM", "AWS"],
     imageUrl: rocheProjImg,
   },
   {
     title: "DHL - BEMS",
     description:
       "I contributed to DHL's Global Event Logistics system.",
-    tags: ["Angular", "TypeScript", "Java", "Play framework", "OracleDB"],
+    tags: ["Angular", "NodeJS", "TypeScript", "Java", "Play framework", "OracleDB"],
     imageUrl: dhlProjImg,
   },
   {
     title: "PCCW Solutions - DWFM",
     description:
       "I was instrumental in designing and implementing the work orders and service tasks system as a developer.",
-    tags: ["Angular", "IONIC", "Spring Boot", "Maria DB", "AWS"],
+    tags: ["Angular", "NodeJS", "IONIC", "Spring Boot", "Maria DB", "AWS"],
     imageUrl: pccwProjImg,
   },
   {
@@ -72,7 +72,7 @@ export const projectsData = [
     title: "CIMB - Clicks",
     description:
       "I contributed to CIMB Clicks, the comprehensive online banking portal for CIMB Bank.",
-    tags: ["Angular", "Java", "Spring", "DB2"],
+    tags: ["Angular", "NodeJS", "Java", "Spring", "DB2"],
     imageUrl: cimbProjImg,
   },
   {
@@ -98,6 +98,8 @@ export const skillsData = [
   "BootStrap",
   "Framer Motion",
   "JavaScript",
+  "NodeJS",
+  "ExpressJS",
   "TypeScript",
   "Next.js",
   "React",
@@ -163,7 +165,7 @@ export const experiencesData = [
     date: "Jul 2022 - Jul 2023",
   },
   {
-    title: "Sr.Full-Stack Developer",
+    title: "Sr.Full-Stack Developer/Lead",
     location: "KL, Malaysia",
     description:
       "I was engaged in multiple projects involving various technology stacks during my tenure at Roche.",
